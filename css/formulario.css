@@ -1,0 +1,119 @@
+.txtinput {
+    display: block;
+    clear: clear;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'josefin_sansbold';
+    padding: 11px 25px;
+    padding-left: 55px;
+    width: 560px;
+    color: #777;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+    -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+    -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+    -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+}
+.txtinput:focus {
+    color: #333;
+    border-color: rgba(41, 92, 161, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+    outline: 0 none;
+}
+input#name,
+input#apellidos {
+    background: #fff url('../img/usuario.png') 5px 4px no-repeat;
+}
+input#email {
+    background: #fff url('../img/email.png') 5px 4px no-repeat;
+}
+#message {
+    background: #fff url('../img/mensaje.png') 5px 4px no-repeat;
+}
+textarea {
+    resize: none;
+    display: block;
+    clear: clear;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'josefin_sansbold';
+    padding: 11px 25px;
+    padding-left: 55px;
+    width: 560px;
+    height: 100px;
+    color: #777;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+    -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+    -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+    -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+}
+textarea:focus {
+    color: #333;
+    border-color: rgba(41, 92, 161, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+    outline: 0 none;
+}
+#buttons #submitbtn {
+    display: block;
+    float: left;
+    padding-top: 10px;
+    height: 40px;
+    padding: 0 16px;
+    margin-top: 10px;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'josefin_sansbold';
+    color: #000;
+    cursor: pointer;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-color: #888888;
+    background-color: #A1C2E6;
+}
+#buttons #submitbtn:hover,
+#buttons #submitbtn:active {
+    color: #fff;
+    background: #005974;
+}
+@media (max-width: 1024px) {
+    .txtinput {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    textarea {
+        font-size: 16px;
+        margin-bottom: 5px;
+        height: 90px;
+    }
+    #buttons #submitbtn {
+        height: 45px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
+    .txtinput {
+        width: 260px;
+    }
+    textarea {
+        width: 260px;
+    }
+}
